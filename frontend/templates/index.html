@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Tech Academy</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    /* Background */
+    .hero {
+        background: linear-gradient(rgba(0,0,50,0.7), rgba(0,0,50,0.7)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Navbar */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 40px;
+        background: rgba(0, 0, 80, 0.8);
+    }
+
+    nav h2 {
+        color: #FFD700;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #FFD700;
+    }
+
+    /* Hero content */
+    .hero-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+        color: #FFD700;
+    }
+
+    .hero-content p {
+        max-width: 600px;
+        font-size: 1.2em;
+    }
+
+    /* Sections */
+    section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .courses {
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    .courses h2 {
+        color: #003366;
+    }
+
+    .course-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .course {
+        background: #003366;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+    }
+
+    .contact {
+        background: #FFD700;
+        color: #003366;
+    }
+
+    /* Footer */
+    footer {
+        background: #003366;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2em;
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .course-list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <nav>
+        <h2>Future Tech</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content" id="home">
+        <h1>Future Tech Academy</h1>
+        <p>Learn the technologies of tomorrow. Join us to build skills in coding, AI, and digital innovation.</p>
+    </div>
+</div>
+
+<section class="courses" id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+        <div class="course">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript basics to advanced.</p>
+        </div>
+        <div class="course">
+            <h3>Python Programming</h3>
+            <p>Learn Python for AI, data science, and automation.</p>
+        </div>
+        <div class="course">
+            <h3>Artificial Intelligence</h3>
+            <p>Introduction to AI, ML, and future technologies.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: futuretech@example.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: India</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Future Tech Academy</p>
+</footer>
+
+</body>
+</html>
